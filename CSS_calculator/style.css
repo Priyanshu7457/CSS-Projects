@@ -1,0 +1,84 @@
+:root {
+  --operatorColor: orange;
+  --clearColor: red;
+  --buttonColor: rgb(106, 106, 252);
+  --ansColor: rgb(20, 169, 20);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(0, 221, 214, 1) 0%,
+    rgba(51, 102, 255, 1) 90%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > main {
+  height: 600px;
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(147, 230, 241, 1) 0%,
+    rgba(145, 192, 241, 1) 45.5%
+  );
+  border-radius: 20px;
+}
+.container > main > h1 {
+  margin-bottom: 10px;
+}
+
+.container > main > .calculatorButton {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+.container > main > .outputBox {
+  height: 50px;
+  width: 87%;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 5px;
+  font-size: 40px;
+  border-radius: 20px;
+}
+.container > main > .calculatorButton > button {
+  padding: 15px;
+  margin: 5px;
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  border-radius: 30%;
+  background-color: var(--buttonColor);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: -5px 5px 5px gray;
+  border: none;
+}
+.container > main > .calculatorButton > button:hover {
+  box-shadow: none;
+}
+.container > main > .calculatorButton > .clear {
+  background-color: var(--clearColor);
+}
+.container > main > .calculatorButton > .operator {
+  background-color: var(--operatorColor);
+}
+.container > main > .calculatorButton > .equalTo {
+  background-color: var(--ansColor);
+}

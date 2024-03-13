@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > main {
+  height: 560px;
+  width: 600px;
+  background-color: white;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 10px;
+}
+.container > main > .top {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container > main > .top > .name {
+  width: 70%;
+  font-size: 30px;
+}
+.container > main > .top > .timer {
+  border: 2px solid rgb(4, 165, 165);
+  border-radius: 10px;
+  color: rgb(25, 25, 133);
+  font-size: 20px;
+  background-color: rgb(171, 255, 255);
+  padding: 10px;
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+.container > main > .top > .timer > .time {
+  background-color: black;
+  width: 30%;
+  height: 100%;
+  padding: 2px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font: bold;
+  font-size: 20px;
+}
+
+.container > main > section {
+  padding: 20px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container > main > section > .question {
+  margin: 20px 0px;
+}
+.container > main > section > .optionBox {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.container > main > section > .optionBox > span {
+  border: 2px solid rgb(114, 185, 162);
+  background-color: rgba(214, 244, 234, 0.516);
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.container > main > footer {
+  border-top: 2px solid rgba(128, 128, 128, 0.616);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+  margin: 0px;
+  height: 50px;
+}
+.container > main > footer > .questionNumber {
+  font-size: 20px;
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+  align-items: center;
+}
+.container > main > footer > button {
+  background-color: rgba(57, 57, 230, 0.998);
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/chatBox.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <title>Chat App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainBox">
+        <div class="sideBox">
+          <div class="topBar">
+            <div class="userDetail">
+              <img
+                src="./personImage/person1.jpg"
+                alt="profileImage"
+                height="50"
+                width="50"
+              />
+              <p>Name</p>
+            </div>
+            <div class="hamburger">
+              <img src="./images/hamburger.png" width="40" height="40" alt="" />
+            </div>
+          </div>
+          <div class="searchBox">
+            <img src="./images/search.png" width="20" height="17" alt="" />
+            <input type="text" name="search" placeholder="Search Users" />
+          </div>
+          <div class="personList"></div>
+        </div>
+        <div class="chatBox"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d5510b933a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="musicBox">
+        <div class="topBar">
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="status">Playing</div>
+          <div class="info">
+            <img src="./image/information.png" width="30" alt="" srcset="" />
+          </div>
+        </div>
+
+        <div class="musicImg">
+          <img src="./image/imgIcon.jpg" alt="" height="300" width="270" />
+        </div>
+        <div class="songDetail">
+          <div class="songName">
+            <h2>Lorem, ipsum.</h2>
+          </div>
+        </div>
+        <div class="slider_container">
+          <input type="range" min="1" max="100" value="0" class="seek_slider" />
+        </div>
+        <div class="durationBox">
+          <div class="current-time">--:--</div>
+          <div class="total-duration">--:--</div>
+        </div>
+        <div class="musicControls">
+          <img
+            src="./image/forward.png"
+            width="55"
+            height="55"
+            alt="forward"
+            style="-webkit-transform: scaleX(-1)"
+          />
+          <img
+            src="./image/pause.png"
+            width="60"
+            height="60"
+            alt="Play/Pause"
+            class="pauseBtn btn hideBtn"
+          />
+          <img
+            src="./image/play.png"
+            width="60"
+            height="60"
+            alt="Play/Pause"
+            class="playBtn showBtn btn"
+          />
+          <img
+            src="./image/forward.png"
+            width="55"
+            height="55"
+            alt="backward"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Aman",
+    "img": "./personImage/person1.jpg",
+    "status": "🟢Online"
+  },
+  {
+    "name": "Amit",
+    "img": "./personImage/person2.jpg",
+    "status": "🔴Offline"
+  },
+  {
+    "name": "Peeyush",
+    "img": "./personImage/person3.jpg",
+    "status": "🔴Offline"
+  },
+  {
+    "name": "Jatin",
+    "img": "./personImage/person4.png",
+    "status": "🟢Online"
+  }
+]

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="info.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weatherBox">
+      <div class="mainBox">
+        <div class="weatherName">
+          <p>city name</p>
+          <h3>
+            <p>Max:--</p>
+            <p>Min:--</p>
+          </h3>
+        </div>
+
+        <div class="weatherInfo">
+          <p>7-Days Forecasts</p>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide box-1">
+                <p>Temp</p>
+                <img src="./img1.png" alt="" width="30" height="30" />
+                <p>Time</p>
+              </div>
+              <div class="slide box-2">
+                <p>Temp</p>
+                <img src="./img1.png" alt="" width="30" height="30" />
+                <p>Time</p>
+              </div>
+              <div class="slide box-3">
+                <p>Temp</p>
+                <img src="./img1.png" alt="" width="30" height="30" />
+                <p>Time</p>
+              </div>
+              <div class="slide box-4">
+                <p>Temp</p>
+                <img src="./img1.png" alt="" width="30" height="30" />
+                <p>Time</p>
+              </div>
+              <div class="slide box-5">
+                <p>Temp</p>
+                <img src="./img1.png" alt="" width="30" height="30" />
+                <p>Time</p>
+              </div>
+              <div class="slide box-6">
+                <p>Temp</p>
+                <img src="./img1.png" alt="" width="30" height="30" />
+                <p>Time</p>
+              </div>
+              <div class="slide box-7">
+                <p>Temp</p>
+                <img src="./img1.png" alt="" width="30" height="30" />
+                <p>Time</p>
+              </div>
+            </div>
+            <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+        </div>
+        <div class="qualityBox">
+          <div class="top">
+            <img src="./image/arrow.png" width="30" height="30" alt="" />
+            <p>Air Quality</p>
+          </div>
+          <div class="middle">
+            <p>Detail</p>
+          </div>
+          <div class="bottom">
+            <p>See More</p>
+            <p>></p>
+          </div>
+        </div>
+
+        <div class="twoBox">
+          <div class="first">
+            <div class="topf">
+              <img
+                src="./image/sun.png"
+                width="30"
+                height="30"
+                alt="sunImage"
+              />
+              <p>Sun Rise</p>
+            </div>
+            <div class="timeBox">{time}</div>
+            <div>SunSet:{time}</div>
+          </div>
+          <div class="second">
+            <div class="topf">
+              <img
+                src="./image/sun.png"
+                width="30"
+                height="30"
+                alt="sunImage"
+              />
+              <p>UV-Index</p>
+            </div>
+            <div class="uvValue">{Value}</div>
+            <div class="status">{Uv-Status}</div>
+          </div>
+        </div>
+        <footer>
+          <img src="./image/hamburger.png" width="40" height="40" alt="" />
+        </footer>
+      </div>
+    </div>
+    <script>
+      let slideIndex = 0;
+      document.querySelector(".prev").setAttribute("hidden", "true");
+      function moveSlide(n) {
+        const slides = document.querySelectorAll(".slide");
+        slideIndex += n;
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        }
+        if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+        const offset = -slideIndex * 100;
+        document.querySelector(
+          ".slider"
+        ).style.transform = `translateX(${offset}%)`;
+        if (n === 1) {
+          document.querySelector(".next").setAttribute("hidden", "true");
+          document.querySelector(".prev").removeAttribute("hidden");
+        } else if (n === -1) {
+          document.querySelector(".next").removeAttribute("hidden");
+          document.querySelector(".prev").setAttribute("hidden", "true");
+        }
+      }
+    </script>
+  </body>
+</html>

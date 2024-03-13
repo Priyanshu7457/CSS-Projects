@@ -1,0 +1,108 @@
+:root {
+  --topBar: rgb(61, 61, 61);
+  --container: linear-gradient(
+    320deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  --musicBox: linear-gradient(
+    246deg,
+    rgba(253, 253, 253, 0.781) 0%,
+    rgba(255, 255, 255, 0.637) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(63, 94, 251);
+  background: var(--container);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicBox {
+  background: rgb(238, 174, 202);
+  background: var(--musicBox);
+  height: 650px;
+  width: 350px;
+  border-radius: 40px;
+}
+
+.topBar {
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger,
+.info {
+  cursor: pointer;
+}
+.line {
+  height: 3px;
+  background-color: var(--topBar);
+  width: 30px;
+  margin: 3px;
+  border-radius: 10px;
+}
+.status {
+  font-size: 20px;
+}
+.musicImg {
+  margin: auto;
+  height: 300px;
+  border-radius: 30px;
+  width: 270px;
+  border: 2px solid black;
+}
+.musicImg img {
+  border-radius: 30px;
+}
+.songDetail {
+  margin-top: 20px;
+}
+.songName {
+  text-align: center;
+}
+.slider_container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.seek_slider {
+  width: 75%;
+}
+.durationBox {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.musicControls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-content: baseline;
+}
+.musicControls img {
+  cursor: pointer;
+}
+
+.hideBtn {
+  display: none;
+}
+.showBtn {
+  display: block;
+}
+
+.btn {
+  height: 60px;
+  width: 60px;
+}

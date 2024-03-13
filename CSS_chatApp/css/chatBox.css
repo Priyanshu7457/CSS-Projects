@@ -1,0 +1,57 @@
+.chatBox > .topBar {
+  background-color: rgb(100, 166, 0);
+  width: 97%;
+  padding: 11px;
+}
+
+.chatBox > .topBar > .userDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatBox > .topBar > .userDetail > img {
+  border-radius: 100%;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: white;
+}
+.chatBox > .topBar > .userDetail > .midBox > p {
+  font-size: 20px;
+  color: white;
+}
+.chatBox > .topBar > .userDetail > .icons i {
+  color: green;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+.chatBox > .messageBox {
+  height: 70%;
+  width: 100%;
+  background-color: transparent;
+}
+.chatBox > .inputBox {
+  width: 100%;
+  display: flex;
+  height: 80px;
+  background-color: transparent;
+}
+.chatBox > .inputBox > input {
+  border: none;
+  height: 100%;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  width: 80%;
+}
+.chatBox > .inputBox > button {
+  border-radius: 10px;
+  background-color: lime;
+  width: 80px;
+  height: 50px;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+}
