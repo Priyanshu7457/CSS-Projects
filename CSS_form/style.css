@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  background: linear-gradient(
+    270deg,
+    rgb(120, 115, 211) 0%,
+    rgb(184, 184, 235) 35%,
+    rgb(1, 149, 255) 100%
+  );
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registrationForm,
+.loginForm {
+  padding: 10px;
+  /* height: 500px; */
+  width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 2px 10px 12px rgb(57, 57, 57),
+    -2px 10px 12px rgb(55, 55, 55);
+}
+.registrationForm{
+  height: 500px;
+}
+.loginForm {
+  height: 380px;
+}
+.buttons {
+  border: 2px solid rgb(92, 92, 92);
+  width: 85%;
+  margin: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons > p {
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+.active {
+  border-radius: 15px;
+  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+form > input {
+  padding: 10px;
+  width: 80%;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px;
+  border-radius: 15px;
+  border-color: rgb(185, 185, 185);
+}
+
+form > input::placeholder {
+  font-size: 15px;
+  color: lightgrey;
+}
+
+form > input[type="submit"] {
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 15px;
+  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgb(1, 149, 255) 100%
+  );
+  margin-bottom: 20px;
+}
+
+form {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+form > p > a {
+  text-decoration: none;
+  color: blue;
+}
+.hide {
+  display: none;
+}

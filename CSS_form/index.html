@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="registrationForm hide">
+        <h1>SignUp Form</h1>
+        <div class="buttons">
+          <p id="loginBtn">Login</p>
+          <p id="signupBtn" class="active">SignUp</p>
+        </div>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          autocomplete="off"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+          autocomplete="off"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          autocomplete="off"
+        />
+        <input
+          type="password"
+          name="confirmPass"
+          id="confirmPass"
+          placeholder="Confirm Password"
+          autocomplete="off"
+        />
+        <input type="submit" value="SignUp" class="active" />
+        <p>Already Have an Account? <a id="loginLink" href="#">Login</a></p>
+      </form>
+
+      <form class="loginForm">
+        <h1>Login Form</h1>
+        <div class="buttons">
+          <p id="loginBtn2" class="active">Login</p>
+          <p id="signupBtn2">SignUp</p>
+        </div>
+        <input
+          type="email"
+          name="email"
+          id="loginEmail"
+          placeholder="Email Address"
+          autocomplete="off"
+        />
+        <input
+          type="password"
+          name="password"
+          id="loginPassword"
+          placeholder="Password"
+          autocomplete="off"
+        />
+        <input type="submit" value="Login" class="active" />
+        <p>Don't Have an Account? <a id="signupLink" href="#">SignUp</a></p>
+      </form>
+    </div>
+    <script>
+      document
+        .querySelector(".registrationForm")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+        });
+      document.querySelector(".loginForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function () {
+          document.querySelector(".registrationForm").classList.add("hide");
+          document.querySelector(".loginForm").classList.remove("hide");
+        });
+
+      document
+        .getElementById("signupBtn")
+        .addEventListener("click", function () {
+          document.querySelector(".registrationForm").classList.remove("hide");
+          document.querySelector(".loginForm").classList.add("hide");
+        });
+
+      document
+        .getElementById("loginBtn2")
+        .addEventListener("click", function () {
+          document.querySelector(".registrationForm").classList.add("hide");
+          document.querySelector(".loginForm").classList.remove("hide");
+        });
+
+      document
+        .getElementById("signupBtn2")
+        .addEventListener("click", function () {
+          document.querySelector(".registrationForm").classList.remove("hide");
+          document.querySelector(".loginForm").classList.add("hide");
+        });
+
+      document
+        .getElementById("loginLink")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(".registrationForm").classList.add("hide");
+          document.querySelector(".loginForm").classList.remove("hide");
+        });
+
+      document
+        .getElementById("signupLink")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(".registrationForm").classList.remove("hide");
+          document.querySelector(".loginForm").classList.add("hide");
+        });
+    </script>
+  </body>
+</html>

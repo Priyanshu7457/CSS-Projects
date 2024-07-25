@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>My Drive-UI</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainBox">
+        <header class="topBar">
+          <div class="logo">
+            <img src="./img/./my drive icon.webp" alt="logo" width="30" height="30" />
+          </div>
+          <div class="searchBar">
+            <i
+              class="fa-solid fa-magnifying-glass searchIcon"
+              style="color: grey"
+            ></i>
+            <br />
+            <input type="text" placeholder="Search Drive" />
+          </div>
+          <div class="icons">
+            <i id="line" class="fa-solid fa-bars"></i>
+            <i id="bell" class="fa-regular fa-bell"></i>
+            <img src="./img/user.jpg" alt="" width="30" height="30" style="border-radius: 100%; cursor: pointer;">
+             <!-- <i id="circleuser" class="fa-solid fa-user-circle"></i> -->
+          </div>
+        </header>
+        <main>
+          <div class="sideBar">
+            <div class="sidenav">
+              <a href="#" class="active">My Drive</a>
+              <a href="#">Computers</a>
+              <a href="#">Shared With Me</a>
+              <a href="#">Recents</a>
+              <a href="#">Starred</a>
+              <a href="#">Deleted</a>
+            </div>
+            <div class="bottom">
+              <p>75/100 GB Used</p>
+              <progress value="70" max="100"></progress>
+
+              <a href="#">Upgrade ↗</a>
+            </div>
+          </div>
+          <section>
+            <div class="top">
+              <h1>My Drive</h1>
+              <button>+</button>
+            </div>
+            <div class="recentFiles">
+              <h3>Recent Files</h3>
+              <div class="fileBox">
+                <div class="imageBox">
+                  <div class="image">
+                    <img src="./img/brief.jpg" alt="" />
+                  </div>
+                  <div class="detail">
+                    <p>Breif.pdf</p>
+
+                    <div class="pdf-icon">
+                      <p>PDF</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="imageBox">
+                  <div class="image">
+                    <img src="./img/achitecture.jpg" alt="" />
+                  </div>
+                  <div class="detail">
+                    <p>Architecture.jpg</p>
+
+                    <i
+                      class="fas fa-image"
+                      style="font-size: 20px; color: olivedrab"
+                    ></i>
+                  </div>
+                </div>
+                <div class="imageBox">
+                  <div class="image">
+                    <img src="./img/minimalism.jpg" alt="" />
+                  </div>
+                  <div class="detail">
+                    <p>Minimilism.jpg</p>
+
+                    <i
+                      class="fas fa-image"
+                      style="font-size: 20px; color: olivedrab"
+                    ></i>
+                  </div>
+                </div>
+                <div class="imageBox">
+                    <div class="image">
+                      <img src="./img/brief.jpg" alt="" />
+                    </div>
+                    <div class="detail">
+                      <p>Work Contract.pdf</p>
+  
+                    <div class="doc-icon">
+                        <p>DOC</p>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="myFiles">
+              <div class="fileBar">
+                <h3>All Files</h3>
+                <div class="fileIcons">
+                  <div class="fileIconImage">
+                    <img src="./img/./menu.png" alt="" width="15" height="15" />
+                  </div>
+                  <div
+                    style="
+                      background-color: rgb(237, 237, 237);
+                      padding: 5px;
+                      border-radius: 5px;
+                    "
+                  >
+                    <img src="./img/./more.png" alt="" width="15" height="15" />
+                  </div>
+                </div>
+              </div>
+              <div class="tableContent">
+                <table>
+                  <thead>
+                    <td>Name</td>
+                    <td>Last Modified</td>
+                    <td>Size</td>
+                    <td>Type</td>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="pdf-icon">
+                          <p>PDF</p>
+                        </div>
+                        Project Brief
+                      </td>
+                      <td>June 6,2019</td>
+                      <td>1.4MB</td>
+                      <td>PDF</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i
+                          class="fas fa-image"
+                          style="font-size: 20px; color: olivedrab"
+                        ></i>
+                      Team Picture
+                      </td>
+                      <td>June 5,2019</td>
+                      <td>12MB</td>
+                      <td>Image</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i
+                          class="fas fa-folder"
+                          style="font-size: 20px; color: rgb(176, 176, 216)"
+                        ></i>
+                    Branding Deck
+                      </td>
+                      <td>March 3,2019</td>
+                      <td>24MB</td>
+                      <td>Folder</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="doc-icon">
+                            <p>DOC</p>
+                          </div>
+                        Project Brief
+                      </td>
+                      <td>March 2,2019</td>
+                      <td>1.7MB</td>
+                      <td>DOC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

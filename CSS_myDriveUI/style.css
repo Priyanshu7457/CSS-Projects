@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navColor: rgb(80, 80, 229);
+  --mainBoxColor: white;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(184, 209, 188);
+  background: linear-gradient(
+    0deg,
+    rgba(184, 209, 188, 1) 0%,
+    rgba(184, 209, 188, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBox {
+  height: 650px;
+  width: 1000px;
+  border-radius: 35px;
+  background-color: var(--mainBoxColor);
+  box-shadow: 1px 1px 15px rgb(48, 47, 47), -1px -1px 15px rgb(48, 47, 47);
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBox .topBar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  flex: 0 0 auto; /* Ensure topBar does not grow or shrink */
+}
+
+.mainBox .topBar .logo {
+  margin: auto;
+  height: 20%;
+  width: 10%;
+}
+
+.mainBox .topBar .searchBar {
+  margin: auto;
+  position: relative;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.mainBox .topBar .searchBar .searchIcon {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+}
+
+.mainBox .topBar .icons {
+  margin: auto;
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: baseline; */
+}
+
+.mainBox .topBar .icons i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mainBox .topBar .searchBar input {
+  height: 30px;
+  text-align: center;
+ color: #393838;
+  font-size: 20px;
+  background-color: rgba(231, 229, 229, 0.87);
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  width: 100%;
+}
+
+.mainBox main {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.sideBar {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  flex-direction: column;
+  background-color: var(--navColor);
+}
+.sideBar .sidenav {
+  height: 78%;
+}
+.sidenav a {
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0.4;
+  color: rgb(147, 222, 222);
+  display: block;
+}
+.sidenav .active {
+  color: white;
+  opacity: 1;
+}
+.sideBar .bottom p:hover,
+.sidenav a:hover {
+  color: white;
+  opacity: 1;
+}
+.sideBar .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sideBar .bottom p {
+  opacity: 0.4;
+  color: rgb(147, 222, 222);
+}
+
+.sideBar .bottom a {
+  font-size: 17px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+}
+/* Progress Bar  */
+progress {
+  width: 70%;
+  height: 5px;
+  appearance: none;
+}
+
+/* Styling for WebKit browsers (Chrome, Safari) */
+progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: yellow;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Styling for Firefox */
+progress::-moz-progress-bar {
+  background-color: yellow;
+  border-radius: 10px 0 0 10px;
+}
+
+.mainBox main section {
+  width: 80%;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.mainBox main section .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+}
+
+.mainBox main section .top button {
+  padding: 10px;
+  font-size: 15px;
+  background-color: blue;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.recentFiles {
+  margin-top: 20px;
+}
+
+.recentFiles .fileBox {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.recentFiles .fileBox .imageBox {
+  cursor: pointer;
+  margin: auto;
+  height: 100px;
+  border-radius: 20px;
+  width: 20%;
+  background-color: rgba(236, 234, 234, 0.797);
+}
+.recentFiles .fileBox .imageBox .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+}
+.recentFiles .fileBox .imageBox .image img{
+  width: 80%;
+  height: 60%;
+}
+.recentFiles .fileBox .imageBox .detail {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.pdf-icon {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doc-icon {
+
+  background-color: rgb(255, 183, 0);
+  height: 10px;
+  width: 10px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fileBox .imageBox .image img {
+  height: 50px;
+  width: 80px;
+}
+.myFiles {
+  margin-top: 30px;
+}
+.myFiles .tableContent {
+  margin-top: 20px;
+}
+.myFiles,
+.myFiles .tableContent,
+.myFiles .tableContent table {
+  width: 100%;
+}
+.myFiles .tableContent table thead {
+  color: grey;
+  text-align: left;
+}
+.myFiles .tableContent table tbody tr td {
+  padding: 15px 0px;
+  /* margin: 15px; */
+  text-align: left;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 550;
+}
+.myFiles .tableContent table tbody tr td:nth-child(1) {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.myFiles .fileBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.myFiles .fileBar h3 {
+  width: 88%;
+}
+.myFiles .fileBar .fileIcons {
+  display: flex;
+  width: 12%;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.myFiles .fileBar .fileIcons .fileIconImage {
+  background-color: rgb(237, 237, 237);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
